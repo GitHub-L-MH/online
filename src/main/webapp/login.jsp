@@ -19,11 +19,11 @@
             	success:function(data){
             		if(data.errorMessage == "ok"){
             			if(1 == flag){
-            				window.location.href = "online/editor/index.jsp";
+            				window.location.href = "${pageContext.request.contextPath}/online/editor/index.jsp";
             			}else if(2 == flag){
-            				window.location.href = "online/professor/index.jsp";
+            				window.location.href = "${pageContext.request.contextPath}/online/professor/index.jsp";
             			}else{
-            				window.location.href = "${pageContext.request.contextPath}/online/professor/writer.jsp";
+            				window.location.href = "${pageContext.request.contextPath}/online/writer/index.jsp";
             			}
             			
             		}
