@@ -8,4 +8,5 @@ public interface UserDao {
 	
 	public User login(Map<String,Object> paramMap) throws Exception;
 
+    Integer updateUser(User user);
 }

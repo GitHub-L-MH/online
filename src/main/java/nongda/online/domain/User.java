@@ -7,6 +7,12 @@ public class User {
 	private Long id;//id
 	private String userName;//用户名
 	private String passWord;//密码
+	private String name;
+	private String email;
+	private String sex;
+	private String phone;
+	private String address;
+	private String unit;
 	private Long createBy;//创建者
 	private Date createTime;//创建时间
 	private Long editBy;//修改者
@@ -60,6 +66,52 @@ public class User {
 	public void setEditTime(Date editTime) {
 		this.editTime = editTime;
 	}
-	
-	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getUnit() {
+		return unit;
+	}
+
+	public void setUnit(String unit) {
+		this.unit = unit;
+	}
 }

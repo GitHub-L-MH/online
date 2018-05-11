@@ -13,8 +13,12 @@
 		<result column="editTime" jdbcType="DATE" property="editTime" />
 		<result column="flag" jdbcType="INTEGER" property="flag" />
 	</resultMap>
+    <update id="updateUser">
+		UPDATE FROM user SET userName=#{userName},name=#{name},email=#{email},sex=#{sex},phone=#{phone},address=#{address},unit=#{unit}
+		WHERE id=#{id}
+	</update>
 
-    
+
     <select id="login" resultMap="BaseResultMap" parameterType="map">
          select * from user where userName=#{userName} and passWord=#{passWord} and flag=#{flag}
     </select>

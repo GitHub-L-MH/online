@@ -18,7 +18,7 @@
             	type:"post",
             	success:function(data){
             		if(data.errorMessage == "ok"){
-            			if(1 == flag){
+            			if(3 == flag){
             				window.location.href = "${pageContext.request.contextPath}/online/editor/index.jsp";
             			}else if(2 == flag){
             				window.location.href = "${pageContext.request.contextPath}/online/professor/index.jsp";

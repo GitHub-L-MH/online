@@ -20,4 +20,9 @@ public class UserServiceImpl implements UserService {
 		return userDao.login(paramMap);
 	}
 
+	@Override
+	public Integer updateUser(User user) {
+		return userDao.updateUser(user);
+	}
+
 }
